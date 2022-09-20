@@ -1,0 +1,305 @@
+/* ******* GLOBAL STYLES ******* */
+
+*, :after, :before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* ******* TYPE ******* */
+
+h1, h2, h3 {
+    color: #fff;
+}
+
+h2, h3 {
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 3rem;
+    line-height: 125%;
+}
+
+h2 {
+    font-size: 2.25rem;
+    line-height: 135%;
+}
+
+h3 {
+    font-size: 1.75rem;
+    line-height: 135%;
+}
+
+p, li {
+    color: #F5F7F8;
+}
+
+p {
+  font-size: 1.125rem;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+
+/* ******* LINKS ******* */
+
+a {
+    color: #45C578;
+}
+
+a:hover, a:focus {
+    color: #65DC95;
+    outline: .125rem dashed #65DC95;
+    outline-offset: .063rem;
+}
+
+a:active {
+    color: #96F8BD;
+}
+
+a[target="_blank"]::after {
+    content: url(assets/new-tab-icon.svg);
+    display: inline-block;
+    margin-left: 0.2rem;
+  }
+
+/* ******* SEMANTIC STYLES ******* */
+
+head, body {
+  background: #1C2832;
+  font-family: 'Inter', sans-serif;
+}
+
+nav a, footer a {
+  color: #FFEFB7;
+  text-decoration: none;
+  font-size: 1.125rem;
+}
+
+nav a:hover, nav a:focus, footer a:hover, footer a:focus {
+  color: #FFEFB7;
+  outline: 0.125rem dashed #FFE178;
+  outline-offset: .063rem;
+}
+
+nav a:active, footer a:active {
+  color: #FFE178;
+}
+
+nav a[target="_blank"]::after,  footer a[target="_blank"]::after {
+  content: url(../assets/new-tab-icon-nav.svg);
+  display: inline-block;
+  margin-left: 0.4rem;
+}
+
+nav {
+  display: flex;
+  flex-flow: column wrap;
+  padding: 2rem 0 2rem 0;
+  margin-top: -1rem;
+}
+
+main {
+    padding: 8.75rem;
+   }
+
+section {
+    margin-top: 5rem;
+  }
+
+footer {
+      display: flex;
+      flex-flow: column wrap;
+      border-top: solid;
+      border-width: .12rem;
+      border-color: #687176;
+      padding: 1rem 0 1rem 0;
+  } 
+
+footer ul {
+  list-style: none;
+  text-align: center;
+}
+
+footer ul li {
+  display: inline-block;
+  justify-content: center;
+}
+
+footer li {
+  display: inline;
+}
+
+footer > ul > li > a {
+  display: block;
+  line-height: 2em;
+  padding: .5rem 2.25rem;
+  text-decoration: none;
+}
+
+
+/* ******* CLASSES ******* */
+
+  .classworkList {
+    font-size: 1.75rem;
+  }
+  
+  .classworkList a[target="_blank"]::after {
+    content: url(../assets/new-tab-icon-lg.svg);
+    display: inline-block;
+    margin-left: 0.4rem;
+  }
+
+  .classworkListStyle {
+    padding: 2.25rem 0 2.25rem 0;
+    border-top: solid;
+    border-bottom: solid;
+    border-width: .12rem;
+    border-color: #FFEFB7;
+    margin-top: -.06rem;
+  }
+
+  .main-nav {
+    display: flex;
+    margin: 0 8rem 0 7rem;
+  }
+
+  .main-nav li:first-child {
+    margin-right: auto;
+  }
+
+  .main-nav a {
+    margin: .5rem;
+    display: block;
+    padding: .75rem;
+    text-decoration: none;
+  }
+
+  .main-nav .logo {
+    float: left;
+    position: relative;
+  }
+
+  .logo img {
+    width: 2.75rem;
+    height: 2.75rem;
+    height: auto;
+    margin-bottom: -1.5rem;
+  }
+
+  .subtext {
+    font-size: 1.125rem;
+    line-height: 166%;
+    padding-top: 0.25rem;
+  }
+
+  /* ******* IDS ******* */
+
+
+  #intro {
+    margin-bottom: 5rem;
+  }
+
+  #marginbelow48 {
+      margin-bottom: 3rem;
+  }
+    
+
+/* ******* MEDIA QUERIES ******* */
+
+/* Less than 900px */
+  @media all and (max-width: 900px) {
+    main {
+      padding: 1.5rem;
+      margin-bottom: 5rem;
+     }
+  
+     .main-nav {
+      width: 100%;
+      justify-content: space-around;
+    }  
+  }
+
+ /* Less than 600px */
+
+  @media all and (max-width: 600px) {
+
+    nav a, footer a {
+      font-size: 1rem;
+  }
+
+  nav a[target="_blank"]::after,  footer a[target="_blank"]::after {
+    margin-left: 0.2rem;
+  }
+  
+
+    h1 {
+      font-size: 2.4rem;
+  }
+
+  h2 {
+      font-size: 1.8rem;
+      line-height: 135%;
+  }
+
+  main {
+      padding: 1rem;
+      margin: 3.75rem 0 3.75rem 0;
+     }
+
+     .main-nav {
+      margin: 1rem 0 1rem 0;
+      padding-top: 1rem;
+    }
+  
+    .logo img {
+      margin-top: -5rem;
+    }
+
+     nav {
+      border-bottom: solid;
+      border-width: .12rem;
+      border-color: #687176;
+      padding: 0rem 0 0rem 0;
+      margin-bottom: 0rem;
+     }
+
+    .main-nav {
+      flex-direction: row;
+      text-align: center;
+    }  
+
+    .main-nav a {
+      margin: .25rem;
+      padding: .5rem;
+    }
+
+    .main-nav .logo {
+      float: none;
+      position: relative;
+    }
+
+    .footer {
+      flex-direction: column;
+      text-align: center;
+    }  
+    
+    footer > ul > li > a {
+      padding: 0rem 1rem;
+    }
+  }
+
+/* Less than 375px */
+  @media all and (max-width: 375px) {
+    main {
+      padding: 1rem;
+      margin: 3rem 0 3rem 0;
+     }
+
+  }
+
